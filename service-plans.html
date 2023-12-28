@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Service Plans | Ahrens Technologies</title>
+    <link rel="icon" href="images/ld-logo.png">
+
+    <!-- REQUIRE STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <div class="importSidebar"></div>
+    <div class="body-container">
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="header-search input-group">
+                    <button class="btn" type="button" id="button-addon1"><img src="images/search-icon.png"
+                            class="img-fluid" alt="search-icon"></button>
+                    <input type="text" class="form-control" placeholder="Search by members name or number" />
+                </div>
+                <div class="page-title-row">
+                    <a href="settings.html" class="title"><img src="images/arrow-left.png" alt="arrow-left" />
+                        Service Plans</a>
+                    <a href="add-service-plan.html" class="btn btn-theme">Add New</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="table-responsive">
+                <table class="table theme-table sp-table mb-0">
+                    <thead>
+                        <tr>
+                            <th style="width: 300px;">Title</th>
+                            <th>Enrollment Month</th>
+                            <th>Enrollment Amount</th>
+                            <th>Renewal Month</th>
+                            <th>Renewal Amount</th>
+                            <th style="width: 150px;">Group</th>
+                            <th>Status</th>
+                            <th style="width: 150px;text-align: right;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WC Members who use Branded Cards</td>
+                            <td>06</td>
+                            <td>$18.00</td>
+                            <td>12</td>
+                            <td>$16.00</td>
+                            <td>WC Sponsored</td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="action-btns">
+                                    <a href="edit-service-plan.html" class="btn btn-sm">
+                                        <img src="images/table-edit-icon.png" alt="img" />
+                                    </a>
+                                    <a href="#" class="btn btn-sm">
+                                        <img src="images/table-delete-icon.png" alt="img" />
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>WC Members who use Branded Cards</td>
+                            <td>06</td>
+                            <td>$18.00</td>
+                            <td>12</td>
+                            <td>$16.00</td>
+                            <td>WC Sponsored</td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" checked />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="action-btns">
+                                    <a href="edit-service-plan.html" class="btn btn-sm">
+                                        <img src="images/table-edit-icon.png" alt="img" />
+                                    </a>
+                                    <a href="#" class="btn btn-sm">
+                                        <img src="images/table-delete-icon.png" alt="img" />
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- REQUIRE JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('.importSidebar').load('sidebar.html');
+        });
+    </script>
+</body>
+
+</html>

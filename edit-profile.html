@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Change Password | Ahrens Technologies</title>
+    <link rel="icon" href="images/ld-logo.png">
+
+    <!-- REQUIRE STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <div class="importSidebar"></div>
+    <div class="body-container">
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="header-search input-group">
+                    <button class="btn" type="button" id="button-addon1"><img src="images/search-icon.png"
+                            class="img-fluid" alt="search-icon"></button>
+                    <input type="text" class="form-control" placeholder="Search by members name or number">
+                </div>
+                <div class="page-title-row">
+                    <a href="my-profile.html" class="title"><img src="images/arrow-left.png" alt="arrow-left"> Edit
+                        Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="card theme-card edit-profile-card">
+                <div class="card-body">
+                    <form action="#" class="form edit-profile-form">
+                        <div class="avtarView">
+                            <img src="images/user-img.png" class="profile-pic" alt="user-img" />
+                            <a href="#" class="upload-btn">
+                                <img src="images/edit-pen-circle.png" alt="image" />
+                                <input class="file-upload" type="file" accept="image/*" />
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6">
+                                <label class="text-dark">First Name</label>
+                                <input type="password" class="form-control" placeholder="Enter First Name" />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="text-dark">Last Name</label>
+                                <input type="password" class="form-control" placeholder="Enter Last Name" />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="text-dark">Email</label>
+                                <input type="password" class="form-control" placeholder="Enter Email" />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="text-dark">Phone Number</label>
+                                <input type="password" class="form-control" placeholder="Enter Phone Number" />
+                            </div>
+                            <div class="col-12 text-end mt-3">
+                                <a href="#" class="btn btn-light-brown me-2">Cancel</a>
+                                <a href="#" class="btn btn-theme">Save</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REQUIRE JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('.importSidebar').load('sidebar.html');
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            var readURL = function (input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('.profile-pic').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            $(".file-upload").on('change', function () {
+                readURL(this);
+            });
+
+            $(".upload-btn").on('click', function () {
+                $(".file-upload").click();
+            });
+        });
+    </script>
+</body>
+
+</html>

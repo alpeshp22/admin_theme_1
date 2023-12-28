@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Profile | Ahrens Technologies</title>
+    <link rel="icon" href="images/ld-logo.png">
+
+    <!-- REQUIRE STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <div class="importSidebar"></div>
+    <div class="body-container">
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="header-search input-group">
+                    <button class="btn" type="button" id="button-addon1"><img src="images/search-icon.png"
+                            class="img-fluid" alt="search-icon"></button>
+                    <input type="text" class="form-control" placeholder="Search by members name or number">
+                </div>
+                <div class="page-title-row">
+                    <a href="#" class="title"><img src="images/arrow-left.png" class="d-none" alt="arrow-left"> My
+                        Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="card theme-card profile-card">
+                <div class="card-body">
+                    <div class="profileView">
+                        <img src="images/user-img.png" class="userImg" alt="user-img" />
+                        <div class="content">
+                            <h4>Henry Lockwood</h4>
+                            <p><img src="images/email-icon.png" alt="email-icon"> henrylockwood@example.com</p>
+                            <p><img src="images/phone-icon.png" alt="email-icon"> (012) 345 - 6789</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="change-password.html" class="btn btn-light-brown">Change Password</a>
+                        <a href="edit-profile.html" class="btn btn-theme">Edit Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REQUIRE JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('.importSidebar').load('sidebar.html');
+        });
+    </script>
+</body>
+
+</html>

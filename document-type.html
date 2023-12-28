@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document Type | Ahrens Technologies</title>
+    <link rel="icon" href="images/ld-logo.png">
+
+    <!-- REQUIRE STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <div class="importSidebar"></div>
+    <div class="body-container">
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="header-search input-group">
+                    <button class="btn" type="button" id="button-addon1"><img src="images/search-icon.png"
+                            class="img-fluid" alt="search-icon"></button>
+                    <input type="text" class="form-control" placeholder="Search by members name or number">
+                </div>
+                <div class="page-title-row">
+                    <a href="settings.html" class="title"><img src="images/arrow-left.png" alt="arrow-left">
+                        Settings</a>
+                    <a href="#addDocumentTypeModal" class="btn btn-theme" data-bs-toggle="modal">Add New</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="card theme-card">
+                <div class="card-body">
+                    <div class="sec-title mb-3">Document Type Titles</div>
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 mb-3">
+                            <div class="dt-block">
+                                <div class="overlay">
+                                    <h5>5 Wishes Document</h5>
+                                </div>
+                                <div class="btns">
+                                    <a href="#editDocumentTypeModal" data-bs-toggle="modal">
+                                        <img src="images/table-edit-icon.png" alt="icon">
+                                    </a>
+                                    <a href="#documentTypeDeleteModal" data-bs-toggle="modal">
+                                        <img src="images/table-delete-icon.png" alt="icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-3">
+                            <div class="dt-block">
+                                <div class="overlay">
+                                    <h5>Advance Health & Personal Care Directive</h5>
+                                </div>
+                                <div class="btns">
+                                    <a href="#editDocumentTypeModal" data-bs-toggle="modal">
+                                        <img src="images/table-edit-icon.png" alt="icon">
+                                    </a>
+                                    <a href="#documentTypeDeleteModal" data-bs-toggle="modal">
+                                        <img src="images/table-delete-icon.png" alt="icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADD SERVICE GROUP MODAL -->
+    <div class="modal fade theme-modal" id="addDocumentTypeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-5 px-md-5">
+                    <h1 class="modal-title">Add New Document Type</h1>
+                    <form action="#" class="form mt-4">
+                        <div class="form-group text-start">
+                            <label>Document Type</label>
+                            <input type="text" class="form-control" placeholder="Enter Document Type">
+                        </div>
+                        <button type="button" class="btn btn-theme">Add Document Type</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END ADD SERVICE GROUP MODAL -->
+
+    <!-- EDIT SERVICE PLAN MODAL -->
+    <div class="modal fade theme-modal" id="editDocumentTypeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-5 px-md-5">
+                    <h1 class="modal-title">Edit Service Plan Group</h1>
+                    <form action="#" class="form mt-4">
+                        <div class="form-group text-start">
+                            <label>Edit Document Type</label>
+                            <input type="text" class="form-control" value="Advance Health & Personal Care Directive">
+                        </div>
+                        <button type="button" class="btn btn-theme">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END EDIT SERVICE PLAN MODAL -->
+
+    <!-- SERVICE PLAN DELETE MODAL -->
+    <div class="modal fade theme-modal" id="documentTypeDeleteModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-5 px-md-5">
+                    <h1 class="modal-title fs-5">Delete Document Type!</h1>
+                    <p class="lead my-4">
+                        This document type is being used for various service plans. Are you sure you want to delete
+                        this?
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-light-brown w-100" data-bs-dismiss="modal"
+                                aria-label="Close">Cancel</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-theme w-100">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SERVICE PLAN DELETE MODAL -->
+
+
+    <!-- REQUIRE JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('.importSidebar').load('sidebar.html');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Service Plan | Ahrens Technologies</title>
+    <link rel="icon" href="images/ld-logo.png">
+
+    <!-- REQUIRE STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <div class="importSidebar"></div>
+    <div class="body-container">
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="header-search input-group">
+                    <button class="btn" type="button" id="button-addon1"><img src="images/search-icon.png"
+                            class="img-fluid" alt="search-icon"></button>
+                    <input type="text" class="form-control" placeholder="Search by members name or number">
+                </div>
+                <div class="page-title-row">
+                    <a href="service-plans.html" class="title"><img src="images/arrow-left.png" alt="arrow-left"> Add
+                        Service Plan</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="card theme-card asp-card">
+                <div class="card-body">
+                    <form action="#" class="form">
+                        <div class="row">
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label>Service Title</label>
+                                <input type="text" class="form-control" placeholder="Enter Service Title" />
+                            </div>
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label>Service Plan Group</label>
+                                <select class="form-select">
+                                    <option value="" selected>Select Group</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label>Enrollment Amount</label>
+                                <p class="doller-sign">$</p>
+                                <input type="text" class="form-control" placeholder="Enter Enrollment Amount" />
+                            </div>
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label>Renewal Amount</label>
+                                <p class="doller-sign">$</p>
+                                <input type="text" class="form-control" placeholder="Enter Renewal Amount" />
+                            </div>
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label>Enrollment Months</label>
+                                <input type="text" class="form-control" placeholder="Enter Enrollment Months" />
+                            </div>
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label>Renewal Months</label>
+                                <input type="text" class="form-control" placeholder="Enter Renewal Months" />
+                            </div>
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label class="d-block">College Student?</label>
+                                <div class="theme-radio">
+                                    <input type="radio" class="btn-check" name="collegeStudent" id="collegeStudent1"
+                                        autocomplete="off" checked>
+                                    <label class="btn" for="collegeStudent1">Yes</label>
+
+                                    <input type="radio" class="btn-check" name="collegeStudent" id="collegeStudent2"
+                                        autocomplete="off">
+                                    <label class="btn" for="collegeStudent2">No</label>
+                                </div>
+                            </div>
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label class="d-block">Adult Card?</label>
+                                <div class="theme-radio">
+                                    <input type="radio" class="btn-check" name="adultCard" id="adultCard1"
+                                        autocomplete="off" checked>
+                                    <label class="btn" for="adultCard1">Yes</label>
+
+                                    <input type="radio" class="btn-check" name="adultCard" id="adultCard2"
+                                        autocomplete="off">
+                                    <label class="btn" for="adultCard2">No</label>
+                                </div>
+                            </div>
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label class="d-block">Minor Card Plan?</label>
+                                <div class="theme-radio">
+                                    <input type="radio" class="btn-check" name="minorCardPlan" id="minorCardPlan1"
+                                        autocomplete="off" checked>
+                                    <label class="btn" for="minorCardPlan1">Yes</label>
+
+                                    <input type="radio" class="btn-check" name="minorCardPlan" id="minorCardPlan2"
+                                        autocomplete="off">
+                                    <label class="btn" for="minorCardPlan2">No</label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-end">
+                                <br />
+                                <a href="#" class="btn btn-light-brown me-2">Cancel</a>
+                                <a href="#" class="btn btn-theme">Save</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REQUIRE JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('.importSidebar').load('sidebar.html');
+        });
+    </script>
+</body>
+
+</html>
