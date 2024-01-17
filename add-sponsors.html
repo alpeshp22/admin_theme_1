@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Sponsors | Ahrens Technologies</title>
+    <link rel="icon" href="images/ld-logo.png">
+
+    <!-- REQUIRE STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <div class="importSidebar"></div>
+    <div class="body-container">
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="header-search input-group">
+                    <button class="btn" type="button" id="button-addon1"><img src="images/search-icon.png"
+                            class="img-fluid" alt="search-icon"></button>
+                    <input type="text" class="form-control" placeholder="Search by members name or number">
+                </div>
+                <div class="page-title-row">
+                    <a href="sponsors.html" class="title"><img src="images/arrow-left.png" alt="arrow-left"> Add
+                        Sponsors</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pb-4">
+            <div class="card theme-card add-sponsor-card">
+                <div class="card-body">
+                    <div class="theme-tabs mb-4 add-sponsor-tab">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item" role="presentation">
+                                <a href="#sponsorsTab1" class="nav-link active" data-bs-toggle="pill" role="tab"
+                                    aria-selected="true">
+                                    <span class="count">1</span>Profile Information
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#sponsorsTab2" class="nav-link" data-bs-toggle="pill" role="tab"
+                                    aria-selected="false">
+                                    <span class="count">2</span> Billing
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#sponsorsTab3" class="nav-link" data-bs-toggle="pill" role="tab"
+                                    aria-selected="false">
+                                    <span class="count">3</span> Documents
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <!-- START PROFILE DETAILS TAB -->
+                        <div class="tab-pane fade show active" id="sponsorsTab1" role="tabpanel" tabindex="0">
+                            <h4 class="sec-title mb-3">Profile Details</h4>
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label class="d-block">Choose Sponsor Type</label>
+                                <div class="theme-radio">
+                                    <input type="radio" class="btn-check" name="sponsorsType" id="sponsorsType1"
+                                        autocomplete="off" checked>
+                                    <label class="btn" for="sponsorsType1">Regular</label>
+
+                                    <input type="radio" class="btn-check" name="sponsorsType" id="sponsorsType2"
+                                        autocomplete="off">
+                                    <label class="btn" for="sponsorsType2">Enhanced</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>First Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter First Name" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Last Name" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Organization Title</label>
+                                    <input type="text" class="form-control" placeholder="Enter Title" />
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <h4 class="sec-title mb-3">Address</h4>
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Address Line 1</label>
+                                    <input type="text" class="form-control" placeholder="Write here..." />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Address Line 2</label>
+                                    <input type="text" class="form-control" placeholder="Write here..." />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <input type="text" class="form-control" placeholder="Enter City Name" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <select class="form-select">
+                                        <option value="" selected>Select State</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <input type="text" class="form-control" placeholder="Enter ZIP Code" />
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <h4 class="sec-title mb-3">Contact</h4>
+                                </div>
+                                <div class="form-group col-xl-3 col-md-6 mb-4">
+                                    <label>Email Address</label>
+                                    <input type="text" class="form-control" placeholder="Enter Email" />
+                                </div>
+                                <div class="form-group col-xl-3 col-md-6 mb-4">
+                                    <label>Secondary Email Address</label>
+                                    <input type="text" class="form-control" placeholder="Enter Email" />
+                                </div>
+                                <div class="form-group col-xl-3 col-md-6 mb-4">
+                                    <label>Phone Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter Phone Number" />
+                                </div>
+                                <div class="form-group col-xl-3 col-md-6 mb-4">
+                                    <label>Website URL</label>
+                                    <input type="text" class="form-control" placeholder="Enter URL here" />
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <h4 class="sec-title mb-3">Plan Details</h4>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Service Plan Group</label>
+                                    <select class="form-select">
+                                        <option value="" selected>Select</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Member Renewal Month</label>
+                                    <select class="form-select">
+                                        <option value="" selected>Select</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Prepaid Enrollments</label>
+                                    <input type="text" class="form-control" placeholder="Enter Number" />
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <h4 class="sec-title mb-3">Sponsor Defaults</h4>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label class="d-block">Defaults to Sponsor Pay</label>
+                                    <div class="theme-radio">
+                                        <input type="radio" class="btn-check" name="sponsorPay" id="sponsorPay1"
+                                            autocomplete="off" checked>
+                                        <label class="btn" for="sponsorPay1">Yes</label>
+
+                                        <input type="radio" class="btn-check" name="sponsorPay" id="sponsorPay2"
+                                            autocomplete="off">
+                                        <label class="btn" for="sponsorPay2">No</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label class="d-block">Renew through Sponsor</label>
+                                    <div class="theme-radio">
+                                        <input type="radio" class="btn-check" name="renewThroughSponsor"
+                                            id="renewThroughSponsor1" autocomplete="off" checked>
+                                        <label class="btn" for="renewThroughSponsor1">Yes</label>
+
+                                        <input type="radio" class="btn-check" name="renewThroughSponsor"
+                                            id="renewThroughSponsor2" autocomplete="off">
+                                        <label class="btn" for="renewThroughSponsor2">No</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label class="d-block">Contact non-renewals</label>
+                                    <div class="theme-radio">
+                                        <input type="radio" class="btn-check" name="minorCardPlan" id="minorCardPlan1"
+                                            autocomplete="off">
+                                        <label class="btn" for="minorCardPlan1">Yes</label>
+
+                                        <input type="radio" class="btn-check" name="minorCardPlan" id="minorCardPlan2"
+                                            autocomplete="off" checked>
+                                        <label class="btn" for="minorCardPlan2">No</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label class="d-block">Send Enrollment Cards To</label>
+                                    <div class="theme-radio">
+                                        <input type="radio" class="btn-check" name="sendEnrollmentCards"
+                                            id="sendEnrollmentCards1" autocomplete="off" checked>
+                                        <label class="btn" for="sendEnrollmentCards1">Sponsor</label>
+
+                                        <input type="radio" class="btn-check" name="sendEnrollmentCards"
+                                            id="sendEnrollmentCards2" autocomplete="off">
+                                        <label class="btn" for="sendEnrollmentCards2">Member</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label class="d-block">Send Renewal Cards To</label>
+                                    <div class="theme-radio">
+                                        <input type="radio" class="btn-check" name="sendRenewalCards"
+                                            id="sendRenewalCards1" autocomplete="off" checked>
+                                        <label class="btn" for="sendRenewalCards1">Sponsor</label>
+
+                                        <input type="radio" class="btn-check" name="sendRenewalCards"
+                                            id="sendRenewalCards2" autocomplete="off">
+                                        <label class="btn" for="sendRenewalCards2">Member</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label class="d-block">Show Medical Conditions on Card</label>
+                                    <div class="theme-radio">
+                                        <input type="radio" class="btn-check" name="showMedicalConditions"
+                                            id="showMedicalConditions1" autocomplete="off">
+                                        <label class="btn" for="showMedicalConditions1">Yes</label>
+
+                                        <input type="radio" class="btn-check" name="showMedicalConditions"
+                                            id="showMedicalConditions2" autocomplete="off" checked>
+                                        <label class="btn" for="showMedicalConditions2">No</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label class="d-block">Show Allergis on Card</label>
+                                    <div class="theme-radio">
+                                        <input type="radio" class="btn-check" name="showAllergis" id="showAllergis1"
+                                            autocomplete="off">
+                                        <label class="btn" for="showAllergis1">Yes</label>
+
+                                        <input type="radio" class="btn-check" name="showAllergis" id="showAllergis2"
+                                            autocomplete="off" checked>
+                                        <label class="btn" for="showAllergis2">No</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label class="d-block">Adult Card</label>
+                                    <div class="theme-radio">
+                                        <input type="radio" class="btn-check" name="adultCard2dultCard" id="adultCard2"
+                                            autocomplete="off">
+                                        <label class="btn" for="adultCard2">Yes</label>
+
+                                        <input type="radio" class="btn-check" name="adultCard2dultCard"
+                                            id="adultCard2dultCard2" autocomplete="off" checked>
+                                        <label class="btn" for="adultCard2dultCard2">No</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label class="d-block">Minor Card</label>
+                                    <div class="theme-radio">
+                                        <input type="radio" class="btn-check" name="minorCard" id="minorCard1"
+                                            autocomplete="off">
+                                        <label class="btn" for="minorCard1">Yes</label>
+
+                                        <input type="radio" class="btn-check" name="minorCard" id="minorCard2"
+                                            autocomplete="off" checked>
+                                        <label class="btn" for="minorCard2">No</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label class="d-block">Collage Card</label>
+                                    <div class="theme-radio">
+                                        <input type="radio" class="btn-check" name="collageCard" id="collageCard1"
+                                            autocomplete="off">
+                                        <label class="btn" for="collageCard1">Yes</label>
+
+                                        <input type="radio" class="btn-check" name="collageCard" id="collageCard2"
+                                            autocomplete="off" checked>
+                                        <label class="btn" for="collageCard2">No</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-end">
+                                    <br />
+                                    <a href="#" class="btn btn-light-brown me-2">Cancel</a>
+                                    <a href="#" class="btn btn-theme">Next</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PROFILE DETAILS TAB -->
+                        <!-- START BILLING INFO TAB -->
+                        <div class="tab-pane fade" id="sponsorsTab2" role="tabpanel" tabindex="0">
+                            <h4 class="sec-title mb-3">Billing Information</h4>
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label class="d-block">Payment Type</label>
+                                <div class="theme-radio">
+                                    <input type="radio" class="btn-check" name="paymentType" id="paymentType1"
+                                        autocomplete="off" checked>
+                                    <label class="btn" for="paymentType1">Check</label>
+
+                                    <input type="radio" class="btn-check" name="paymentType" id="paymentType2"
+                                        autocomplete="off">
+                                    <label class="btn" for="paymentType2">Credit Card</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Card Holder Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Card Holder Name" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Sponsor's Credit Card Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter Card Number" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Credit Card Expiry Date</label>
+                                    <input type="text" class="form-control" placeholder="mm/yyyy" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END BILLING INFO TAB -->
+
+                        <!-- START MANAGE DOCUMENT TAB -->
+                        <div class="tab-pane fade" id="sponsorsTab3" role="tabpanel" tabindex="0">
+                            <h4 class="sec-title mb-3">Manage Documents</h4>
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label class="d-block">Selected Documents</label>
+                            </div>
+                            <ul class="document-list">
+                                <li>
+                                    <div class="leftCol">
+                                        <h5>Rank</h5>
+                                    </div>
+                                    <div class="centerCol">
+                                        <h5>Document</h5>
+                                    </div>
+                                    <div class="rightCol">
+                                        <h5>Select</h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="leftCol">
+                                        <img src="images/v-dots-six.png" class="dots-img" alt="img" />
+                                        <div class="count">1</div>
+                                    </div>
+                                    <div class="centerCol">
+                                        <h5>Advanced Health Care Proxy/Living Will</h5>
+                                    </div>
+                                    <div class="rightCol">
+                                        <div class="form-check checkbox">
+                                            <input class="form-check-input" type="checkbox" id="docCheckbox1" checked>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="leftCol">
+                                        <img src="images/v-dots-six.png" class="dots-img" alt="img" />
+                                        <div class="count">2</div>
+                                    </div>
+                                    <div class="centerCol">
+                                        <h5>Combined Living Will & Healthcare Surrogate</h5>
+                                    </div>
+                                    <div class="rightCol">
+                                        <div class="form-check checkbox">
+                                            <input class="form-check-input" type="checkbox" id="docCheckbox2" checked>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="leftCol">
+                                        <img src="images/v-dots-six.png" class="dots-img" alt="img" />
+                                        <div class="count">3</div>
+                                    </div>
+                                    <div class="centerCol">
+                                        <h5>DNR</h5>
+                                    </div>
+                                    <div class="rightCol">
+                                        <div class="form-check checkbox">
+                                            <input class="form-check-input" type="checkbox" id="docCheckbox3" checked>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="leftCol">
+                                        <img src="images/v-dots-six.png" class="dots-img" alt="img" />
+                                        <div class="count">4</div>
+                                    </div>
+                                    <div class="centerCol">
+                                        <h5>Emergency Contacts</h5>
+                                    </div>
+                                    <div class="rightCol">
+                                        <div class="form-check checkbox">
+                                            <input class="form-check-input" type="checkbox" id="docCheckbox4" checked>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="leftCol">
+                                        <img src="images/v-dots-six.png" class="dots-img" alt="img" />
+                                        <div class="count">5</div>
+                                    </div>
+                                    <div class="centerCol">
+                                        <h5>Health Care Information</h5>
+                                    </div>
+                                    <div class="rightCol">
+                                        <div class="form-check checkbox">
+                                            <input class="form-check-input" type="checkbox" id="docCheckbox5" checked>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <br>
+                            <h4 class="sec-title mb-3">Select Documents</h4>
+                            <div class="row selectDocsRow mx-auto">
+                                <div class="col-xl-4 col-md-6 Col">
+                                    <div class="form-check checkbox">
+                                        <input class="form-check-input" type="checkbox" id="selectDoc1">
+                                        <label class="form-check-label" for="selectDoc1">5 Wishes Document</label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 Col">
+                                    <div class="form-check checkbox">
+                                        <input class="form-check-input" type="checkbox" id="selectDoc2">
+                                        <label class="form-check-label" for="selectDoc2">Advance Directive</label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 Col">
+                                    <div class="form-check checkbox">
+                                        <input class="form-check-input" type="checkbox" id="selectDoc3">
+                                        <label class="form-check-label" for="selectDoc3">Advance Directive for Health
+                                            Care</label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 Col">
+                                    <div class="form-check checkbox">
+                                        <input class="form-check-input" type="checkbox" id="selectDoc4">
+                                        <label class="form-check-label" for="selectDoc4">Advance Health & Personal
+                                            Care</label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 Col">
+                                    <div class="form-check checkbox">
+                                        <input class="form-check-input" type="checkbox" id="selectDoc5">
+                                        <label class="form-check-label" for="selectDoc5">Advance Health Care
+                                            Directive</label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 Col">
+                                    <div class="form-check checkbox">
+                                        <input class="form-check-input" type="checkbox" id="selectDoc6">
+                                        <label class="form-check-label" for="selectDoc6">Advance Medical
+                                            Directive</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END MANAGE DOCUMENT TAB -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REQUIRE JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('.importSidebar').load('sidebar.html');
+        });
+    </script>
+</body>
+
+</html>

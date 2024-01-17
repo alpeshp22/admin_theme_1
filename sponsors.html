@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sponsors | Ahrens Technologies</title>
+    <link rel="icon" href="images/ld-logo.png">
+
+    <!-- REQUIRE STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <div class="importSidebar"></div>
+    <div class="body-container">
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="header-search input-group">
+                    <button class="btn" type="button" id="button-addon1"><img src="images/search-icon.png"
+                            class="img-fluid" alt="search-icon"></button>
+                    <input type="text" class="form-control" placeholder="Search by members name or number" />
+                </div>
+                <div class="page-title-row">
+                    <a href="javascript:void(0);" class="title"><img src="images/arrow-left.png" alt="arrow-left" />
+                        Sponsors</a>
+                    <div class="align-items-center d-flex">
+                        <div class="header-search input-group mb-0 header-search-outline">
+                            <button class="btn" type="button" id="button-addon1"><img src="images/search-icon.png"
+                                    class="img-fluid" alt="search-icon"></button>
+                            <input type="text" class="form-control" placeholder="Search Sponsors" />
+                        </div>
+                        <div class="ms-2">
+                            <a href="add-sponsors.html" class="btn btn-theme text-truncate">Add Sponsors</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pb-4">
+            <div class="table-responsive">
+                <table class="table theme-table sp-table mb-0">
+                    <thead>
+                        <tr>
+                            <th style="width: 150px;">ID</th>
+                            <th>Name</th>
+                            <th>Organization</th>
+                            <th>Last Login</th>
+                            <th>Status</th>
+                            <th style="width: 150px;text-align: right;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>125</td>
+                            <td>Stefan Scott</td>
+                            <td>Organization Name #1</td>
+                            <td>27/11/2022 - 08:23 AM</td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="action-btns">
+                                    <a href="view-sponsor-details.html" class="btn btn-sm">
+                                        <img src="images/table-view-icon.png" alt="img" />
+                                    </a>
+                                    <a href="#" class="btn btn-sm">
+                                        <img src="images/table-edit-icon.png" alt="img" />
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>452</td>
+                            <td>Stefan Scott</td>
+                            <td>Organization Name #1</td>
+                            <td>27/11/2022 - 08:23 AM</td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" checked />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="action-btns">
+                                    <a href="view-sponsor-details.html" class="btn btn-sm">
+                                        <img src="images/table-view-icon.png" alt="img" />
+                                    </a>
+                                    <a href="#" class="btn btn-sm">
+                                        <img src="images/table-edit-icon.png" alt="img" />
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- REQUIRE JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('.importSidebar').load('sidebar.html');
+        });
+    </script>
+</body>
+
+</html>

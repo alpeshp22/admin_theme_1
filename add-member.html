@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Member | Ahrens Technologies</title>
+    <link rel="icon" href="images/ld-logo.png">
+
+    <!-- REQUIRE STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <div class="importSidebar"></div>
+    <div class="body-container">
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="header-search input-group">
+                    <button class="btn" type="button" id="button-addon1"><img src="images/search-icon.png"
+                            class="img-fluid" alt="search-icon"></button>
+                    <input type="text" class="form-control" placeholder="Search by members name or number">
+                </div>
+                <div class="page-title-row">
+                    <a href="sponsors.html" class="title"><img src="images/arrow-left.png" alt="arrow-left"> Add
+                        Member</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pb-4">
+            <div class="card theme-card add-sponsor-card">
+                <div class="card-body">
+                    <div class="theme-tabs mb-4 add-sponsor-tab">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item" role="presentation">
+                                <a href="#addMemberTab1" class="nav-link active" data-bs-toggle="pill" role="tab"
+                                    aria-selected="true">
+                                    <span class="count">1</span> Sponsor & Plan
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#addMemberTab2" class="nav-link" data-bs-toggle="pill" role="tab"
+                                    aria-selected="false">
+                                    <span class="count">2</span> Personal Information
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#addMemberTab3" class="nav-link" data-bs-toggle="pill" role="tab"
+                                    aria-selected="false">
+                                    <span class="count">3</span> Contact Information
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#addMemberTab4" class="nav-link" data-bs-toggle="pill" role="tab"
+                                    aria-selected="false">
+                                    <span class="count">4</span> Documents
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#addMemberTab5" class="nav-link" data-bs-toggle="pill" role="tab"
+                                    aria-selected="false">
+                                    <span class="count">5</span> Activation
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <!-- START PROFILE DETAILS TAB -->
+                        <div class="tab-pane fade show active" id="addMemberTab1" role="tabpanel" tabindex="0">
+                            <div class="row">
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Sponsor</label>
+                                    <select class="form-select">
+                                        <option value="" selected>Select Sponsor</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Number of Additional Cards</label>
+                                    <input type="text" class="form-control" placeholder="Enter Last Name" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <div class="form-group">
+                                        <label class="d-block">Payment By:</label>
+                                        <div class="theme-radio">
+                                            <input type="radio" class="btn-check" name="paymentBy" id="paymentBy1"
+                                                autocomplete="off" checked>
+                                            <label class="btn" for="paymentBy1">Sponsor</label>
+
+                                            <input type="radio" class="btn-check" name="paymentBy" id="paymentBy2"
+                                                autocomplete="off">
+                                            <label class="btn" for="paymentBy2">Member</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="sec-title mb-3">Payment Method</h4>
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label class="d-block">Choose Method</label>
+                                <div class="theme-radio">
+                                    <input type="radio" class="btn-check" name="paymentMethod" id="paymentMethod1"
+                                        autocomplete="off" checked>
+                                    <label class="btn" for="paymentMethod1">Check</label>
+
+                                    <input type="radio" class="btn-check" name="paymentMethod" id="paymentMethod2"
+                                        autocomplete="off">
+                                    <label class="btn" for="paymentMethod2">Credit Card</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Member's Credit Card Number</label>
+                                    <input type="text" class="form-control" placeholder="Card Number" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Credit Card Expiry date</label>
+                                    <input type="text" class="form-control" placeholder="mm/yyyy" />
+                                </div>
+                            </div>
+                            <h4 class="sec-title mb-3">Service Plan</h4>
+                            <div class="row">
+                                <div class="col-xl-4 col-md-6 mb-3">
+                                    <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="servicePlan"
+                                            id="servicePlan1">
+                                        <label class="form-check-label" for="servicePlan1">
+                                            1 Year - Retail & Renewals through Member
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 mb-3">
+                                    <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="servicePlan"
+                                            id="servicePlan2">
+                                        <label class="form-check-label" for="servicePlan2">
+                                            2 Years - Retail & Renewals through Member
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 mb-3">
+                                    <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="servicePlan"
+                                            id="servicePlan3">
+                                        <label class="form-check-label" for="servicePlan3">2 Years - Retail & Renewals
+                                            through Member</label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 mb-3">
+                                    <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="servicePlan"
+                                            id="servicePlan4">
+                                        <label class="form-check-label" for="servicePlan4">4 Years - College
+                                            Card</label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 mb-3">
+                                    <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="servicePlan"
+                                            id="servicePlan5">
+                                        <label class="form-check-label" for="servicePlan5">6 Years - Minor Card</label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 mb-3">
+                                    <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="servicePlan"
+                                            id="servicePlan6">
+                                        <label class="form-check-label" for="servicePlan6">4 Years - Minor Card</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-md-6 mb-3">
+                                    <div class="form-check radio">
+                                        <input class="form-check-input" type="radio" name="servicePlan"
+                                            id="servicePlan7">
+                                        <label class="form-check-label" for="servicePlan7">2 Years - Minor Card</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-end">
+                                <a href="#" class="btn btn-light-brown me-3">Cancel</a>
+                                <a href="#" class="btn btn-theme">Next</a>
+                            </div>
+                        </div>
+                        <!-- END PROFILE DETAILS TAB -->
+
+                        <!-- START BILLING INFO TAB -->
+                        <div class="tab-pane fade" id="addMemberTab2" role="tabpanel" tabindex="0">
+                            <div class="form-group col-xl-4 col-md-6 mb-4">
+                                <label class="d-block">Process Renewal By:</label>
+                                <div class="theme-radio">
+                                    <input type="radio" class="btn-check" name="processRenewalBy" id="processRenewalBy1"
+                                        autocomplete="off" checked>
+                                    <label class="btn" for="processRenewalBy1">Sponsor</label>
+
+                                    <input type="radio" class="btn-check" name="processRenewalBy" id="processRenewalBy2"
+                                        autocomplete="off">
+                                    <label class="btn" for="processRenewalBy2">Member</label>
+                                </div>
+                            </div>
+                            <h4 class="sec-title mb-3">Account</h4>
+                            <div class="row">
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>First Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter First Name" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Middle Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Middle Name" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Last Name" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Email Address</label>
+                                    <input type="text" class="form-control" placeholder="Enter Email" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Home Phone Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter Number" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Cell Phone Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter Number" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Date of Birth</label>
+                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Mother’s Maiden Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Name" />
+                                </div>
+                            </div>
+                            <h4 class="sec-title mb-3 mt-4">Address Details</h4>
+                            <div class="row">
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Address Line 1</label>
+                                    <input type="text" class="form-control" placeholder="Write here..." />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Address Line 1</label>
+                                    <input type="text" class="form-control" placeholder="Write here..." />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <input type="text" class="form-control" placeholder="Enter City Name" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <select class="form-select">
+                                        <option value="" selected>Select State</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <input type="text" class="form-control" placeholder="Enter ZIP Code" />
+                                </div>
+                            </div>
+                            <h4 class="sec-title mb-3 mt-4">Allergies & Medical Conditions</h4>
+                            <div class="row">
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Card Allergies</label>
+                                    <p class="doller-sign">/30</p>
+                                    <input type="text" class="form-control" placeholder="Enter Here" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Card Medical Conditions</label>
+                                    <p class="doller-sign">/30</p>
+                                    <input type="text" class="form-control" placeholder="Enter Here" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Allergies</label>
+                                    <textarea class="form-control" rows="5" placeholder="Write Here"></textarea>
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Medical Conditions</label>
+                                    <textarea class="form-control" rows="5" placeholder="Write Here"></textarea>
+                                </div>
+                            </div>
+                            <h4 class="sec-title mb-3 mt-4">Card Notes</h4>
+                            <div class="row">
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Card Notes 1</label>
+                                    <p class="doller-sign">/30</p>
+                                    <input type="text" class="form-control" placeholder="Enter Here" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Card Notes 2</label>
+                                    <p class="doller-sign">/30</p>
+                                    <input type="text" class="form-control" placeholder="Enter Here" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Card Notes 3</label>
+                                    <p class="doller-sign">/30</p>
+                                    <input type="text" class="form-control" placeholder="Enter Here" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Card Notes 4</label>
+                                    <p class="doller-sign">/30</p>
+                                    <input type="text" class="form-control" placeholder="Enter Here" />
+                                </div>
+                            </div>
+                            <div class="mt-4 text-end">
+                                <a href="#" class="btn btn-light-brown me-3">Cancel</a>
+                                <a href="#" class="btn btn-theme">Next</a>
+                            </div>
+                        </div>
+                        <!-- END BILLING INFO TAB -->
+
+                        <!-- START Physician Information Tab -->
+                        <div class="tab-pane fade" id="addMemberTab3" role="tabpanel" tabindex="0">
+                            <h4 class="sec-title mb-3">Physician Information</h4>
+                            <div class="row">
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Full Name" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Practice Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Practice Name" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Phone Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter Number" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Fax</label>
+                                    <input type="text" class="form-control" placeholder="Enter Fax" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <div class="form-group">
+                                        <label class="d-block">Send Fax to Physician?</label>
+                                        <div class="theme-radio">
+                                            <input type="radio" class="btn-check" name="sendFaxPhysician"
+                                                id="sendFaxPhysician1" autocomplete="off">
+                                            <label class="btn" for="sendFaxPhysician1">Yes</label>
+
+                                            <input type="radio" class="btn-check" name="sendFaxPhysician"
+                                                id="sendFaxPhysician2" autocomplete="off" checked>
+                                            <label class="btn" for="sendFaxPhysician2">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-4 text-center">
+                                <a href="#" class="btn btn-light-brown me-3">Add More +</a>
+                            </div>
+                            <div class="mt-4">
+                                <h4 class="sec-title mb-3">Emergency Contact 1</h4>
+                                <div class="row">
+                                    <div class="form-group col-md-6 mb-4">
+                                        <label>Full Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Full Name" />
+                                    </div>
+                                    <div class="form-group col-md-6 mb-4">
+                                        <label>Relationship</label>
+                                        <input type="text" class="form-control" placeholder="Enter Here" />
+                                    </div>
+                                    <div class="form-group col-md-6 mb-4">
+                                        <label>Home Phone Number</label>
+                                        <input type="text" class="form-control" placeholder="Enter Number" />
+                                    </div>
+                                    <div class="form-group col-md-6 mb-4">
+                                        <label>Cell Phone Number</label>
+                                        <input type="text" class="form-control" placeholder="Enter Number" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 text-end">
+                                <a href="#" class="btn btn-light-brown me-3">Cancel</a>
+                                <a href="#" class="btn btn-theme">Next</a>
+                            </div>
+                        </div>
+                        <!-- End Physician Information Tab -->
+                        <!-- Start Documents Tab -->
+                        <div class="tab-pane fade" id="addMemberTab4" role="tabpanel" tabindex="0">
+                            <h4 class="sec-title mb-3">Uploaded Documents</h4>
+                            <div class="row">
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <div class="doc-block">
+                                        <img src="images/pdf-icon.png" class="pdfIcon" alt="img" />
+                                        <p>Emergency Contact</p>
+                                        <a href="#" class="close-btn"><img src="images/close-square.png"
+                                                alt="img" /></a>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <div class="doc-block">
+                                        <img src="images/pdf-icon.png" class="pdfIcon" alt="img" />
+                                        <p>Physician Information</p>
+                                        <a href="#" class="close-btn"><img src="images/close-square.png"
+                                                alt="img" /></a>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <div class="doc-block">
+                                        <img src="images/pdf-icon.png" class="pdfIcon" alt="img" />
+                                        <p>Contact Information</p>
+                                        <a href="#" class="close-btn"><img src="images/close-square.png"
+                                                alt="img" /></a>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <div class="doc-block">
+                                        <img src="images/pdf-icon.png" class="pdfIcon" alt="img" />
+                                        <p>Emergency Contact</p>
+                                        <a href="#" class="close-btn"><img src="images/close-square.png"
+                                                alt="img" /></a>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <div class="doc-block">
+                                        <img src="images/pdf-icon.png" class="pdfIcon" alt="img" />
+                                        <p>Physician Information</p>
+                                        <a href="#" class="close-btn"><img src="images/close-square.png"
+                                                alt="img" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Document Type</label>
+                                    <select class="form-select">
+                                        <option value="" selected>Choose Document Type</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-xl-5 col-md-6 mb-4">
+                                    <label>Upload Document</label>
+                                    <div class="d-flex">
+                                        <div class="file-input" style="flex:1">
+                                            <input type="file">
+                                            <span class="label" data-js-label>Drop file here</span>
+                                            <span class="button">Browse</span>
+                                        </div>
+                                        <div class="ms-3">
+                                            <a href="#" class="btn btn-theme" style="height:48px;line-height:28px;">
+                                                Upload <img src="images/doc-upload-icon.png" alt="img" class="ms-2"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-end">
+                                <a href="#" class="btn btn-light-brown me-3">Cancel</a>
+                                <a href="#" class="btn btn-theme">Next</a>
+                            </div>
+                        </div>
+                        <!-- End Documents Tab -->
+                        <!-- START Activation Tab -->
+                        <div class="tab-pane fade" id="addMemberTab5" role="tabpanel" tabindex="0">
+                            <p style="font-size: 18px;color: #5F566F;">By activating a member the following tasks will
+                                be performed:</p>
+                            <ul class="theme-ul ps-5">
+                                <li>The member is sent an email notification letting them know that their account has
+                                    been set up.</li>
+                                <li>The member is added to the queue to have a member card produced.</li>
+                                <li>The member's healthcare directives are faxed to their physician (if they so
+                                    requested on the enrollment form).</li>
+                            </ul>
+                            <div class="mt-4 text-end">
+                                <a href="#" class="btn btn-light-brown me-3">Cancel</a>
+                                <a href="#addMemberModal" class="btn btn-theme" data-bs-toggle="modal">Activate</a>
+                            </div>
+                        </div>
+                        <!-- End Activation Tab -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICE PLAN DELETE MODAL -->
+    <div class="modal fade theme-modal" id="addMemberModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-5 px-md-5">
+                    <h3 class="mb-3">Success!</h3>
+                    <div class="text-center my-3"><img src="images/success-icon.png" class="img-fluid" alt="img"></div>
+                    <p class="lead my-4">
+                        The member account for Stefan has been successfully activated. This member has been added to the
+                        member card queue.
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-light-brown w-100" data-bs-dismiss="modal"
+                                aria-label="Close">Go to Members</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-theme w-100">Create Another</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SERVICE PLAN DELETE MODAL -->
+
+    <!-- REQUIRE JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('.importSidebar').load('sidebar.html');
+        });
+    </script>
+    <script>
+        var inputs = document.querySelectorAll(".file-input");
+
+        for (var i = 0, len = inputs.length; i < len; i++) {
+            customInput(inputs[i]);
+        }
+
+        function customInput(el) {
+            const fileInput = el.querySelector('[type="file"]');
+            const label = el.querySelector("[data-js-label]");
+
+            fileInput.onchange = fileInput.onmouseout = function () {
+                if (!fileInput.value) return;
+
+                var value = fileInput.value.replace(/^.*[\\\/]/, "");
+                el.className += " -chosen";
+                label.innerText = value;
+            };
+        }
+
+    </script>
+</body>
+
+</html>
