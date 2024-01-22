@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit Member Details | Ahrens Technologies</title>
+    <link rel="icon" href="images/ld-logo.png">
+
+    <!-- REQUIRE STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <div class="importSidebar"></div>
+    <div class="body-container">
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="header-search input-group">
+                    <button class="btn" type="button" id="button-addon1"><img src="images/search-icon.png"
+                            class="img-fluid" alt="search-icon"></button>
+                    <input type="text" class="form-control" placeholder="Search by members name or number">
+                </div>
+                <div class="page-title-row">
+                    <a href="sponsors.html" class="title"><img src="images/arrow-left.png" alt="arrow-left"> Edit
+                        Member Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pb-4">
+            <div class="card theme-card add-sponsor-card">
+                <div class="card-body">
+                    <div class="theme-tabs mb-4 add-sponsor-tab">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item" role="presentation">
+                                <a href="#editMemberTab1" class="nav-link active" data-bs-toggle="pill" role="tab"
+                                    aria-selected="true">
+                                    <span class="count">1</span>Personal Information
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#editMemberTab2" class="nav-link" data-bs-toggle="pill" role="tab"
+                                    aria-selected="false">
+                                    <span class="count">2</span> Contact Information
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <!-- START PERSONAL INFO TAB -->
+                        <div class="tab-pane fade show active" id="editMemberTab1" role="tabpanel" tabindex="0">
+                            <h4 class="sec-title mb-3">Account</h4>
+                            <div class="row">
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>First Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter First Name"
+                                        value="Stefan" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Middle Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Middle Name"
+                                        value="Jack" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Last Name"
+                                        value="Scott" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Email Address</label>
+                                    <input type="text" class="form-control" placeholder="Enter Email"
+                                        value="example@gmail.com" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Home Phone Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter Home Phone Number"
+                                        value="(012) 345-6789" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Cell Phone Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter Cell Phone Number"
+                                        value="(012) 345-6789" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Renewal Date</label>
+                                    <input type="text" class="form-control" placeholder="Enter Renewal Date"
+                                        value="02/04/2024" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Date of Birth</label>
+                                    <input type="date" class="form-control" placeholder="Enter Date of Birth"
+                                        value="12/11/1992" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>Mother’s Maiden Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Email"
+                                        value="Alina Gilbert" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label>PIN</label>
+                                    <input type="text" class="form-control" placeholder="Enter Email" value="1234" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <label class="d-block">Process Renewal</label>
+                                    <div class="theme-radio">
+                                        <input type="radio" class="btn-check" name="processRenewal" id="processRenewal1"
+                                            autocomplete="off" checked>
+                                        <label class="btn" for="processRenewal1">Sponsor</label>
+
+                                        <input type="radio" class="btn-check" name="processRenewal" id="processRenewal2"
+                                            autocomplete="off">
+                                        <label class="btn" for="processRenewal2">Member</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <h4 class="sec-title mb-3">Address Details</h4>
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Address Line 1</label>
+                                    <input type="text" class="form-control" placeholder="Write here..."
+                                        value="Sample text" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Address Line 2</label>
+                                    <input type="text" class="form-control" placeholder="Write here..."
+                                        value="Sample text" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <input type="text" class="form-control" placeholder="Enter City Name"
+                                        value="Richmond" />
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <select class="form-select">
+                                        <option value="" selected>Virginia</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-xl-4 col-md-6 mb-4">
+                                    <input type="text" class="form-control" placeholder="Enter ZIP Code"
+                                        value="2560305" />
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <h4 class="sec-title mb-3">Allergies & Medical Conditions</h4>
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Card Allergies</label>
+                                    <input type="text" class="form-control" placeholder="Enter Card Allergies"
+                                        value="Itchy skin" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Card Medical Conditions</label>
+                                    <input type="text" class="form-control" placeholder="Enter Card Medical Conditions"
+                                        value="I get itchy skin when dust comes in contact with my skin." />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Allergies</label>
+                                    <input type="text" class="form-control" placeholder="Enter Allergies"
+                                        value="Asthma" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Medical Conditions</label>
+                                    <input type="text" class="form-control" placeholder="Enter Medical Conditions"
+                                        value="I had an Asthma problem for the last 2 years." />
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <h4 class="sec-title mb-3">Card Notes</h4>
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Card Note 1</label>
+                                    <input type="text" class="form-control" placeholder="Enter Card Note 1"
+                                        value="Dummy text" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Card Note 2</label>
+                                    <input type="text" class="form-control" placeholder="Enter Card Note 1"
+                                        value="Dummy text" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Card Note 3</label>
+                                    <input type="text" class="form-control" placeholder="Enter Card Note 1"
+                                        value="Dummy text" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Card Note 4</label>
+                                    <input type="text" class="form-control" placeholder="Enter Card Note 1"
+                                        value="Dummy text" />
+                                </div>
+                                <div class="col-12 text-end">
+                                    <br />
+                                    <a href="#" class="btn btn-light-brown me-2">Cancel</a>
+                                    <a href="#" class="btn btn-theme">Save</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PERSONAL INFO TAB -->
+                        <!-- START CONTACT INFO TAB -->
+                        <div class="tab-pane fade" id="editMemberTab2" role="tabpanel" tabindex="0">
+                            <h4 class="sec-title mb-3">Primary Care Physician</h4>
+                            <div class="row">
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Full Name"
+                                        value="Joseph Crist" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Practice Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Practice Name"
+                                        value="Joseph Hospital" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Phone Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter Phone Number"
+                                        value="012 354-6789" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Fax</label>
+                                    <input type="text" class="form-control" placeholder="Enter Fax"
+                                        value="+1-907-555-1234" />
+                                </div>
+
+                                <h4 class="sec-title mb-2 mt-3">Secondary Physician</h4>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Full Name"
+                                        value="Joseph Crist" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Practice Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Practice Name"
+                                        value="Joseph Hospital" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Phone Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter Phone Number"
+                                        value="012 354-6789" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Fax</label>
+                                    <input type="text" class="form-control" placeholder="Enter Fax"
+                                        value="+1-907-555-1234" />
+                                </div>
+
+                                <h4 class="sec-title mb-2 mt-3">Emergency Contact 1</h4>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Full Name"
+                                        value="Joseph Crist" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Relationship</label>
+                                    <input type="text" class="form-control" placeholder="Enter Relationship"
+                                        value="Father" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Home Phone Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter Home Phone Number"
+                                        value="012 345-6789" />
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>Cell Phone Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter Cell Phone Number"
+                                        value="012 345-6789" />
+                                </div>
+                                <div class="col-12 text-end">
+                                    <br />
+                                    <a href="#" class="btn btn-light-brown me-2">Cancel</a>
+                                    <a href="#" class="btn btn-theme">Save</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CONTACT INFO TAB -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REQUIRE JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('.importSidebar').load('sidebar.html');
+        });
+    </script>
+</body>
+
+</html>

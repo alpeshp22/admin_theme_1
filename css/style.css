@@ -1053,3 +1053,30 @@ p.form-control {
 .file-input.-chosen>.label {
     opacity: 1;
 }
+
+/* START MEMBERS STYLE */
+.form-select.gray {
+    background-color: #E8E7EA;
+    border-color: #E8E7EA;
+}
+
+.radioGroupWithBg {
+    padding: 20px 8px;
+    padding-bottom: 0;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+    border-radius: 12px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../images/calender-icon.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    border-width: thin;
+}
+
+/* END MEMBERS STYLE */

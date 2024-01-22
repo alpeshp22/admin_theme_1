@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Members | Ahrens Technologies</title>
+    <link rel="icon" href="images/ld-logo.png">
+
+    <!-- REQUIRE STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <div class="importSidebar"></div>
+    <div class="body-container">
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="header-search input-group">
+                    <button class="btn" type="button" id="button-addon1"><img src="images/search-icon.png"
+                            class="img-fluid" alt="search-icon"></button>
+                    <input type="text" class="form-control" placeholder="Search by members name or number" />
+                </div>
+                <div class="page-title-row">
+                    <div class="title"> Active Members</div>
+                    <div class="ms-auto">
+                        <select class="form-select gray text-center">
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="table-responsive">
+                <table class="table theme-table sp-table mb-0">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Account</th>
+                            <th>Renewal Date</th>
+                            <th>Member Status</th>
+                            <th>Sponsor Status</th>
+                            <th style="width: 150px;text-align: right;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Stefan Scott</td>
+                            <td>1027044</td>
+                            <td>04/08/2024</td>
+                            <td>Active</td>
+                            <td>Formerly Sponsored</td>
+                            <td>
+                                <div class="action-btns">
+                                    <a href="view-member.html" class="btn btn-sm">
+                                        <img src="images/table-view-icon.png" alt="img" />
+                                    </a>
+                                    <a href="edit-member-details.html" class="btn btn-sm">
+                                        <img src="images/table-edit-icon.png" alt="img" />
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Stefan Scott</td>
+                            <td>1027044</td>
+                            <td>04/08/2024</td>
+                            <td>Active</td>
+                            <td>Formerly Sponsored</td>
+                            <td>
+                                <div class="action-btns">
+                                    <a href="#" class="btn btn-sm">
+                                        <img src="images/table-view-icon.png" alt="img" />
+                                    </a>
+                                    <a href="edit-member-details.html" class="btn btn-sm">
+                                        <img src="images/table-edit-icon.png" alt="img" />
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- REQUIRE JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('.importSidebar').load('sidebar.html');
+        });
+    </script>
+</body>
+
+</html>
