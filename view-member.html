@@ -394,14 +394,14 @@
                                 </div>
                                 <div class="form-group col-xl-5 col-md-6 mb-4">
                                     <label>Upload Document</label>
-                                    <div class="d-flex">
-                                        <div class="file-input" style="flex:1">
-                                            <input type="file">
-                                            <span class="label" data-js-label>Drop file here</span>
-                                            <span class="button">Browse</span>
+                                    <div class="file-drop-row">
+                                        <div class="file-drop-area">
+                                            <div class="file-msg">Drop file here</div>
+                                            <input class="file-input" type="file" multiple>
+                                            <span class="fake-btn">Browse</span>
                                         </div>
-                                        <div class="ms-3">
-                                            <a href="#" class="btn btn-theme" style="height:48px;line-height:28px;">
+                                        <div class="btn-view">
+                                            <a href="#" class="btn btn-theme">
                                                 Upload <img src="images/doc-upload-icon.png" alt="img" class="ms-2"></a>
                                         </div>
                                     </div>
@@ -858,6 +858,36 @@
         $(function () {
             $('.importSidebar').load('sidebar.html');
         });
+    </script>
+    <script>
+        var $fileInput = $(".file-input");
+        var $droparea = $(".file-drop-area");
+
+        // highlight drag area
+        $fileInput.on("dragenter focus click", function () {
+            $droparea.addClass("is-active");
+        });
+
+        // back to normal state
+        $fileInput.on("dragleave blur drop", function () {
+            $droparea.removeClass("is-active");
+        });
+
+        // change inner text
+        $fileInput.on("change", function () {
+            var filesCount = $(this)[0].files.length;
+            var $textContainer = $(this).prev();
+
+            if (filesCount === 1) {
+                // if single file is selected, show file name
+                var fileName = $(this).val().split("\\").pop();
+                $textContainer.text(fileName);
+            } else {
+                // otherwise show number of files
+                $textContainer.text(filesCount + " files selected");
+            }
+        });
+
     </script>
 </body>
 
