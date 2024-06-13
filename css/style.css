@@ -1105,3 +1105,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* END MEMBERS STYLE */
+
+/* START DASHBOARD STYLE */
+.dashboard-card {
+    min-height: 100%;
+    position: relative;
+}
+.dashboard-card .placeholder-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}
+.dashboard-card h4 {
+    font-size: 36px;
+    color: #0D0719;
+    margin-bottom: 5px;
+}
+.dashboard-card p {
+    font-size: 16px;
+    color: var(--marun8D);
+    font-weight: 500;
+}
+/* END DASHBOARD STYLE */
+
+
+
+
