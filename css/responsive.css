@@ -6,31 +6,185 @@
 }
 
 /*// END 1199PX  //*/
-
 /*// START 911PX  //*/
 @media (max-width: 991px) {
     .auth-form-wrapper {
         padding: 30px;
     }
+
+    .sidebar {
+        left: -250px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .sidebar.active .sidebar-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: calc(100% - 250px);
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .body-container {
+        padding-left: 0;
+    }
+
+    .page-header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .body-container .container-fluid {
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .dataTables_wrapper .dataTables_length {
+        font-size: 14px;
+    }
+
+    .dataTables_wrapper .dataTables_length select {
+        height: auto;
+        font-size: 14px;
+        width: auto;
+    }
+
+    .dataTables_wrapper .dataTables_filter input {
+        height: auto;
+    }
+
+    .dataTables_wrapper .dataTables_filter {
+        width: 170px;
+    }
+
+    .dataTables_wrapper .dataTables_filter input {
+        height: auto;
+        font-size: 14px;
+    }
 }
 
 /*// END 911PX  //*/
+
 
 /*// START 767PX  //*/
 @media (max-width: 767px) {
     .auth-form-wrapper {
         padding: 50px 30px;
-        min-height: auto;
+        margin-top: 0;
+        min-height: inherit;
+    }
+
+    .auth-wrapper .main-row {
+        /* align-items: flex-start; */
     }
 
     .auth-wrapper .main-row .col-md-6.text-center {
-        display: none;
+        /* display: none; */
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .page-title-row .title {
+        font-size: 18px;
+    }
+
+    .page-title-row .btn-theme {
+        font-size: 14px;
+        letter-spacing: normal;
+        padding: 0.5rem 1rem;
+    }
+
+    .sec-title {
+        font-size: 18px;
+    }
+
+    .profile-card .card-body {
+        display: block;
+    }
+
+    .profile-card .btn {
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    .dataTables_wrapper .dataTables_paginate {
+        justify-content: center;
+    }
+
+    .enhanced-signup .main-row {
+        padding: 20px 0;
+    }
+
+    .enhanced-signup .content-col {
+        margin-bottom: 1.5rem;
+    }
+
+    .member-tc-container .container {
+        max-width: 100%;
+    }
+
+    .member-tc-container .card-body {
+        padding: 30px;
     }
 }
 
 /*// END 767PX  //*/
+
+/*// START 640PX  //*/
+@media (max-width: 640px) {
+
+    .theme-table tr th,
+    .theme-table tr td {
+        padding: 10px !important;
+        font-size: 14px;
+    }
+
+    .dataTables_wrapper {
+        padding-top: 0;
+        margin-top: 25px;
+    }
+
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter {
+        position: relative;
+        width: 100%;
+        top: inherit;
+        left: inherit;
+        right: inherit;
+    }
+
+    .dataTables_wrapper .dataTables_filter {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .dataTables_wrapper .dataTables_filter label {
+        display: block;
+    }
+
+    table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
+    table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+        top: 12px;
+    }
+}
+
+/*// END 640PX  //*/
+
+
 /*// START 575PX  //*/
 @media (max-width: 575px) {
+    .btn {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+    }
+
     .auth-form-wrapper {
         padding: 50px 15px;
     }
@@ -38,6 +192,142 @@
     .auth-form-wrapper .title {
         font-size: 28px;
     }
+
+    .profile-card .profileView {
+        display: block;
+    }
+
+    .profile-card .profileView .userImg {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .profile-card .profileView .content {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .profile-card .profileView .content h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .profile-card .profileView .content p {
+        font-size: 15px;
+        padding-left: 25px;
+    }
+
+    .profile-card .profileView .content p img {
+        width: 18px;
+    }
+
+    .profile-card .btn {
+        font-size: 14px;
+    }
+
+    .edit-profile-form {
+        display: block;
+    }
+
+    .edit-profile-form .avtarView {
+        margin: auto;
+    }
+
+    .edit-profile-form .row {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .edit-profile-form .row .text-end {
+        text-align: center !important;
+    }
+
+    .profile-setup .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .profile-setup .auth-form-wrapper .skip-link {
+        right: 10px;
+        top: 10px;
+        font-size: 12px;
+        padding: 0 5px 3px;
+    }
+
+    .profile-setup .theme-tabs .nav-pills {
+        justify-content: flex-start;
+    }
+
+    .member-tc-container .title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .member-tc-container {
+        padding: 30px 0;
+    }
+
+    .member-tc-container .card-body {
+        padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x)
+    }
+
+    .auth-form-wrapper .sub-title br {
+        display: none;
+    }
+
+    .auth-wrapper .logo {
+        max-width: 50%;
+    }
 }
 
 /*// END 575PX  //*/
+
+/*// START 420PX  //*/
+@media (max-width: 420px) {
+    .page-header .nav-view .navbar-brand {
+        max-width: 38px;
+    }
+
+    .header-search .btn {
+        width: 35px;
+        line-height: 17px;
+    }
+
+    .header-search .btn img {
+        width: 16px;
+    }
+
+    .header-search .form-control {
+        font-size: 12px;
+    }
+
+    .header-search .form-control {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .sidebar-hamburger {
+        min-width: 40px;
+        height: 40px;
+    }
+
+    .page-title-row .title img {
+        max-width: 8px;
+        margin-right: 5px;
+    }
+
+    .page-title-row .btn {
+        font-size: 12px;
+        padding: 0.4rem 0.7rem;
+    }
+
+    .sec-title {
+        font-size: 16px;
+    }
+
+    .dt-block h5 {
+        font-size: 15px;
+    }
+}
+
+/*// END 420PX  //*/
