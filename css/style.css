@@ -1128,7 +1128,64 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 500;
 }
 /* END DASHBOARD STYLE */
+.dashboard-card .circle-chart {
+    margin-top: 20px;
+}
 
+.circle-progress {
+    width: 100px;
+    height: 100px;
+}
+
+.circle-progress svg {
+    stroke-linecap: round;
+}
+
+.circle-chart {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.circle-chart .content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.circle-chart .list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.circle-chart .list:last-child {
+    margin-bottom: 0;
+}
+
+.circle-chart .list p {
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.circle-chart .list p span {
+    display: inline-block;
+    width: 15px;
+    height: 7.5px;
+    border-radius: 10px;
+    background-color: #E8E7EA;
+    margin-right: 10px;
+}
+
+.circle-chart .list p span.bg {
+    background-color: var(--theme-color);
+}
+
+.circle-chart .list h6 {
+    margin-bottom: 0;
+    color: #0D0719;
+    font-weight: 500;
+}
 
 
 
