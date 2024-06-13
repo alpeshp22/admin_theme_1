@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard | Ahrens Technologies</title>
+    <link rel="icon" href="images/ld-logo.png">
+
+    <!-- REQUIRE STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <div class="importSidebar"></div>
+    <div class="body-container">
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="header-search input-group">
+                    <button class="btn" type="button" id="button-addon1"><img src="images/search-icon.png"
+                            class="img-fluid" alt="search-icon"></button>
+                    <input type="text" class="form-control" placeholder="Search by members name or number">
+                </div>
+                <div class="page-title-row">
+                    <div class="title">Dashboard</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pb-4">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                    <div class="card theme-card dashboard-card">
+                        <div class="card-body">
+                            <h4>91,540</h4>
+                            <p>Total enrollments</p>
+                            <img src="images/dasbord_placeholder_img.png" class="img-fluid placeholder-img" alt="img" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                    <div class="card theme-card dashboard-card">
+                        <div class="card-body">
+                            <h4>29,052</h4>
+                            <p>Number of active members</p>
+                            <img src="images/active_member_chart.svg" class="img-fluid mt-3" alt="img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REQUIRE JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('.importSidebar').load('sidebar.html');
+        });
+    </script>
+</body>
+
+</html>
