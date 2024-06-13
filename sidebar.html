@@ -15,4 +15,14 @@
         <li><a href="my-profile.html" class="active"><img src="images/user-icon.png" alt="icon" /> My Profile</a></li>
         <li><a href="index.html"><img src="images/logout-icon.png" alt="icon" /> Log Out</a></li>
     </ul>
+    <a href="javascript:void(0);" class="sidebar-overlay menu-toggle-btn"></a>
 </div>
+<script>
+    $('.menu-toggle-btn').on('click', function(){
+        $(this).toggleClass('active');
+        $('.sidebar').toggleClass('active');
+    })
+    $('.sidebar-overlay').on('click', function(){
+        $('.sidebar-hamburger').removeClass('active');
+    })
+</script>
