@@ -69,7 +69,7 @@ body {
 }
 
 .form-select {
-    background-image: url(../../images/down-arrow.svg);
+    background-image: url(../images/down-arrow.svg);
     background-size: 18px 16px;
 }
 
@@ -100,17 +100,17 @@ body {
     height: 1.35em;
     background-color: var(--marunF0);
     border-color: var(--marunF0);
-    background-image: url(../../images/switch_off.svg);
+    background-image: url(../images/switch_off.svg);
 }
 
 .form-switch .form-check-input:focus {
     box-shadow: none;
     outline: none;
-    background-image: url(../../images/switch_off.svg);
+    background-image: url(../images/switch_off.svg);
 }
 
 .form-switch .form-check-input:checked {
-    background-image: url(../../images/switch_on.svg);
+    background-image: url(../images/switch_on.svg);
 }
 
 .checkbox .form-check-input:checked {
@@ -132,7 +132,7 @@ body {
 }
 
 .radio .form-check-input:checked[type=radio] {
-    background-image: url(../../images/switch_on.svg);
+    background-image: url(../images/switch_on.svg);
     background-color: transparent;
     border-color: var(--theme-color);
 }
@@ -183,7 +183,7 @@ body {
     border: 0;
     width: 18px;
     height: 16px;
-    background-image: url(../../images/down-arrow.svg);
+    background-image: url(../images/down-arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: -8px;
@@ -191,7 +191,7 @@ body {
 }
 
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-    background-image: url(../../images/down-arrow.svg);
+    background-image: url(../images/down-arrow.svg);
     transform: rotate(-180deg);
 }
 
@@ -279,7 +279,7 @@ label.error {
     position: relative;
     width: 100%;
     background-color: #631a2b;
-    background-image: url(../../images/auth-bg.png);
+    background-image: url(../images/auth-bg.png);
     background-size: cover;
     background-position: center center;
     z-index: 150;
@@ -674,7 +674,7 @@ label.error {
     position: absolute;
     right: 10px;
     top: 12px;
-    background-image: url(../../images/eye-icon.png);
+    background-image: url(../images/eye-icon.png);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -682,7 +682,7 @@ label.error {
 }
 
 .icon.eye-slash-icon {
-    background-image: url(../../images/eye-slash-icon.png);
+    background-image: url(../images/eye-slash-icon.png);
 }
 
 .edit-profile-form .avtarView {
@@ -948,7 +948,7 @@ table.dataTable thead .sorting {
     width: 18px;
     height: 18px;
     display: inline-block;
-    background-image: url(../../images/radio_off.png);
+    background-image: url(../images/radio_off.png);
     background-size: 100%;
     position: absolute;
     left: 12px;
@@ -962,7 +962,7 @@ table.dataTable thead .sorting {
 }
 
 .theme-radio .btn-check:checked+.btn:before {
-    background-image: url(../../images/radio_on.png);
+    background-image: url(../images/radio_on.png);
 }
 
 .theme-radio span.error,
@@ -1275,7 +1275,7 @@ table.dataTable.no-footer {
     border-radius: 12px;
     border: 1px solid var(--inputBorder);
     background-color: #fff;
-    background-image: url(../../images/down-arrow.svg);
+    background-image: url(../images/down-arrow.svg);
     background-size: 18px 16px;
     background-repeat: no-repeat;
     background-position: 95%;
@@ -1351,7 +1351,7 @@ table.dataTable.no-footer {
     content: '';
     width: 50%;
     height: 50%;
-    background-image: url(../../images/arrow-left.png);
+    background-image: url(../images/arrow-left.png);
     background-size: contain;
     background-position: center center;
     display: block;
