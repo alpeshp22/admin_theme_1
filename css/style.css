@@ -41,7 +41,7 @@ body {
 }
 
 .form-select {
-    background-image: url(../../images/down-arrow.svg);
+    background-image: url(../images/down-arrow.svg);
     background-size: 18px 16px;
 }
 
@@ -76,17 +76,17 @@ textarea.form-control {
     height: 1.35em;
     background-color: var(--marunF0);
     border-color: var(--marunF0);
-    background-image: url(../../images/switch_off.svg);
+    background-image: url(../images/switch_off.svg);
 }
 
 .form-switch .form-check-input:focus {
     box-shadow: none;
     outline: none;
-    background-image: url(../../images/switch_off.svg);
+    background-image: url(../images/switch_off.svg);
 }
 
 .form-switch .form-check-input:checked {
-    background-image: url(../../images/switch_on.svg);
+    background-image: url(../images/switch_on.svg);
 }
 
 .checkbox .form-check-input:checked {
@@ -108,7 +108,7 @@ textarea.form-control {
 }
 
 .radio .form-check-input:checked[type=radio] {
-    background-image: url(../../images/switch_on.svg);
+    background-image: url(../images/switch_on.svg);
     background-color: transparent;
     border-color: var(--theme-color);
 }
@@ -179,7 +179,7 @@ label.error {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../../images/login-overlay.png);
+    background-image: url(../images/login-overlay.png);
     background-size: cover;
     background-position: center center;
     opacity: 0.3;
@@ -483,7 +483,7 @@ label.error {
 .eye-icon {
     width: 32px;
     height: 32px;
-    background-image: url(../../images/eye-icon.png);
+    background-image: url(../images/eye-icon.png);
     background-size: cover;
     background-position: center center;
 }
@@ -491,7 +491,7 @@ label.error {
 .eye-slash-icon {
     width: 32px;
     height: 32px;
-    background-image: url(../../images/eye-slash-icon.png);
+    background-image: url(../images/eye-slash-icon.png);
     background-size: cover;
     background-position: center center;
 }
@@ -737,7 +737,7 @@ a.setting-card:hover {
     width: 18px;
     height: 18px;
     display: inline-block;
-    background-image: url(../../images/radio_off.png);
+    background-image: url(../images/radio_off.png);
     background-size: 100%;
     position: absolute;
     left: 12px;
@@ -751,7 +751,7 @@ a.setting-card:hover {
 }
 
 .theme-radio .btn-check:checked+.btn:before {
-    background-image: url(../../images/radio_on.png);
+    background-image: url(../images/radio_on.png);
 }
 
 /*//// END SETTINGS PAGES STYLES ////*/
